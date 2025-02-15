@@ -9,7 +9,7 @@ const Display=()=>{
     const [val,setval] =useState([]);
 
     const loadata=()=>{
-        let api = "http://localhost:8000/employee/empDisplay";
+        let api = "https://mern-crud-yl07.onrender.com/employee/empDisplay";
         axios.get(api).then((res)=>{
            setval(res.data)
            console(res.data)

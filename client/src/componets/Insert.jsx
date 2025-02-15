@@ -15,7 +15,7 @@ const Insert=()=>{
     }
 
     const handleSubmit=()=>{
-        let api="http://localhost:8000/employee/empSave";
+        let api="https://mern-crud-yl07.onrender.com/employee/empSave";
         axios.post(api,input ).then((res)=>{
           alert("data save sucessfully")
         }) 

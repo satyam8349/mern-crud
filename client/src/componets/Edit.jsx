@@ -13,7 +13,7 @@ const Edit=()=>{
 
 
     const loaddata=()=>{
-        let api="http://localhost:8000/employee/empEdit";
+        let api="http://localhost:/employee/empEdit";
         axios.post(api,{id:empid}).then((res)=>{
            setinput(res.data)
            
@@ -33,7 +33,7 @@ const Edit=()=>{
     }
 
     const handleSubmit=()=>{
-      let api="http://localhost:8000/employee/empUpdate";
+      let api="https://mern-crud-yl07.onrender.com/employee/empUpdate";
       axios.post(api,input).then((res)=>{
         alert("data updated sucessfully")
       })

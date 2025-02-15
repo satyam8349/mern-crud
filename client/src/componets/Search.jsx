@@ -11,7 +11,7 @@ const Search=()=>{
 
 
     const handleSearch=()=>{
-        let api = "http://localhost:8000/employee/empSearch";
+        let api = "https://mern-crud-yl07.onrender.com/employee/empSearch";
         axios.post(api,{empno:empno}).then((res)=>{
             setval(res.data)
         

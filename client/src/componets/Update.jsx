@@ -10,7 +10,7 @@ const Update=()=>{
     const navigate = useNavigate()
 
     const loadata=()=>{
-        let api = "http://localhost:8000/employee/empDisplay";
+        let api = "https://mern-crud-yl07.onrender.com/employee/empDisplay";
         axios.get(api).then((res)=>{
            setval(res.data)
         })
@@ -22,7 +22,7 @@ const Update=()=>{
 
 
     const mydel=(id)=>{
-      let api="http://localhost:8000/employee/empDelete";
+      let api="https://mern-crud-yl07.onrender.com/employee/empDelete";
       axios.post(api,{id:id}).then((res)=>{
         alert("data deleted sucssfully")
         loadata()
